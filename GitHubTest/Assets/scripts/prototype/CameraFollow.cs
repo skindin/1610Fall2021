@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public GameObject playerCar;
-    Vector3 offset;
+    public Transform car;
+    public float shiftSpeed;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        offset = transform.position - playerCar.transform.position;
-    }
+    //void Start()
+    //{
+    //    Cursor.lockState = CursorLockMode.Locked;
+    //    Cursor.visible = false;
+    //}
 
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = playerCar.transform.position + offset;
+        transform.position = car.position;
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(car.forward), shiftSpeed * Time.deltaTime);
     }
 }
