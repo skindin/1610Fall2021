@@ -14,14 +14,19 @@ public class PlayerController : MonoBehaviour
     public AudioClip boing;
     public float jumpForce = 100;
     public float gravity = 1;
-    bool onGround = true;
+    public bool onGround = true;
+    static bool setGravity = false;
 
     void Start()
     {
         rigBod = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         audSrc = GetComponent<AudioSource>();
-        Physics.gravity *= gravity;
+        if (!setGravity)
+        {
+            Physics.gravity *= gravity;
+            setGravity = true;
+        }
     }
 
     private void Update()
@@ -37,8 +42,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                var scene = SceneManager.GetActiveScene();
-                SceneManager.SetActiveScene(scene);
+                SceneManager.LoadScene(0);
+                Game.SetState(gameState.inGame);
             }
         }
     }

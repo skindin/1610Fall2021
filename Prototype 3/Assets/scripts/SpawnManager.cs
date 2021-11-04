@@ -46,11 +46,11 @@ public class Game
     {
         if (state != newState)
         {
+            state = newState;
             switch (newState)
             {
                 case gameState.endGame:
                     Debug.Log("Game Over");
-                    state = newState;
                     break;
             }
         }
