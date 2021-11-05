@@ -1,0 +1,9 @@
+Bug Log
+Balloon Game
+Changed balloon upforce to impulse mode with a magnitude of 1.5
+changed exclamation point so background only moves when game is running
+Corrected "PawnsObject" typo
+reset firework particle emitter location
+adjusted background to appropriate size, makes it repeat after distance is over 55
+Added minimum height condition of 20 to jump if statement
+Created gameover method for multiuse, added if statement which ends the game if balloon goes below 0
