@@ -80,7 +80,7 @@ public class Levitate : MonoBehaviour
         //Debug.DrawLine(transform.position, downPoint, debugColor);
     }
 
-    void UpdateRot (Quaternion newRotDelta)
+    public void UpdateRot (Quaternion newRotDelta)
     {
         Quaternion toGoal = newRotDelta;
 
