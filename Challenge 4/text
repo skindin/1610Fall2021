@@ -1,0 +1,8 @@
+Challenge 4 Debug Log
+reversed kickforce direction so enemies fly away from player when hit
+switched findObjectsWithTag statement to find "PowerUp" tag, rather than "Enemy" so it counts enemies rather than powerups
+added line to start powerup cooldown coroutine inside ontriggerenter statement to create powerUp cooldown system
+switched the 2 to waveCount in spawnEnemyWave for statement to make enemy spawn increase
+increased the enemy speed to 500 and added refference to playerGoal
+created if statement which changes speed from default speed to boost speed when the player holds the spacebar
+made spawn script add a modifier multiplied with waveCount to speed
