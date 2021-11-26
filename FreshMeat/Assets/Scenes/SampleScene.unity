@@ -2217,7 +2217,7 @@ MonoBehaviour:
   - {fileID: 2980786128986151270, guid: 0ae865ed90f07d648b0b2ec10b3cc900, type: 3}
   - {fileID: 2980786128986151270, guid: f28941b3811a780458bdd57786dca650, type: 3}
   spawnBox: {x: 80, y: 10, z: 80}
-  spawnRate: 1000
+  spawnRate: 100
 --- !u!4 &1395717320
 Transform:
   m_ObjectHideFlags: 0

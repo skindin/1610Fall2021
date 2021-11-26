@@ -30,8 +30,12 @@ public class Animal : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, predator.position) <= fleeDistance)
         {
-            var direction = (transform.position - predator.position).normalized;
+            var direction = transform.position - predator.position;
+            direction.y = 0;
+            direction.Normalize();
             rigbod.AddForce((direction + Vector3.up) * jumpForce);
+
+            transform.rotation = Quaternion.LookRotation(direction);
         }
     }
 }

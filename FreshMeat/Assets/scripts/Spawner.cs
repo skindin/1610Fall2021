@@ -15,7 +15,8 @@ public class Spawner : MonoBehaviour
             var newObj = objects[Random.Range(0, objects.Count)]; //choose random animal from list
             var box = spawnBox / 2;
             var pos = new Vector3(Random.Range(-box.x, box.x), Random.Range(-box.y, box.y), Random.Range(-box.z, box.z)) + Vector3.up * 10;
-            Instantiate(newObj, pos, newObj.transform.rotation, transform);
+            var rot = Quaternion.AngleAxis(Random.Range(0, 360),Vector3.up);
+            Instantiate(newObj, pos, rot, transform);
         }
     }
 
