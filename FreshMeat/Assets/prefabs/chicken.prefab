@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5009445062896120398}
   - component: {fileID: 7470217465004534538}
   - component: {fileID: 1652431341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: chicken
   m_TagString: Animal
   m_Icon: {fileID: 0}
@@ -62,8 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ef6ff773653d140b74e0dafe4d787c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: chicken
-  meat: chicken
+  Name: Chicken
+  meat: Chicken
+  meatPref: {fileID: 1585958138276090578, guid: c75e6c965da8879458000df6b85cd7db, type: 3}
   jumpForce: 100
   fleeDistance: 10
 --- !u!1 &7339733574528320948
@@ -79,7 +80,7 @@ GameObject:
   - component: {fileID: 7317025068239799716}
   - component: {fileID: 7245199876393354658}
   - component: {fileID: 3709918601298310033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChickenBrown
   m_TagString: Untagged
   m_Icon: {fileID: 0}

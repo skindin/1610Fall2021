@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca03deea63a67504bab95ea9894a6389, type: 3}
   m_Name: Baggot
   m_EditorClassIdentifier: 
-  Name: Barley Baggot
+  Name: Brother Barley Baggot
   xClass: Paladin
   race: Halfling
   alignment:

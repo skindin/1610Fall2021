@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5009445062896120398}
   - component: {fileID: 7470217465004534538}
   - component: {fileID: 1984716966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pig
   m_TagString: Animal
   m_Icon: {fileID: 0}
@@ -62,8 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ef6ff773653d140b74e0dafe4d787c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: pig
-  meat: pork
+  Name: Pig
+  meat: Pork
+  meatPref: {fileID: 5009498036089212567, guid: 310e77390ce46d747adb2e5a30b395d1, type: 3}
   jumpForce: 100
   fleeDistance: 10
 --- !u!1001 &4034709566450809038
@@ -76,6 +77,10 @@ PrefabInstance:
     - target: {fileID: 1055064919166404, guid: de6abd774f85e18408346a3233418242, type: 3}
       propertyPath: m_Name
       value: Pig
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055064919166404, guid: de6abd774f85e18408346a3233418242, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4597376258575022, guid: de6abd774f85e18408346a3233418242, type: 3}
       propertyPath: m_RootOrder
@@ -123,14 +128,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6abd774f85e18408346a3233418242, type: 3}
---- !u!1 &4034545124256216330 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1055064919166404, guid: de6abd774f85e18408346a3233418242, type: 3}
-  m_PrefabInstance: {fileID: 4034709566450809038}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4030299124441100896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4597376258575022, guid: de6abd774f85e18408346a3233418242, type: 3}
+  m_PrefabInstance: {fileID: 4034709566450809038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4034545124256216330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1055064919166404, guid: de6abd774f85e18408346a3233418242, type: 3}
   m_PrefabInstance: {fileID: 4034709566450809038}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &3812183939262098568

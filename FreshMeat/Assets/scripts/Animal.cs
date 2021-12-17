@@ -6,6 +6,7 @@ public class Animal : MonoBehaviour
 {
     public string Name;
     public string meat;
+    public GameObject meatPref;
 
     public float jumpForce = 100;
     public float fleeDistance = 10;

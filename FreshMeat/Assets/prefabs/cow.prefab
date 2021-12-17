@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5009445062896120398}
   - component: {fileID: 7470217465004534538}
   - component: {fileID: 925713443}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cow
   m_TagString: Animal
   m_Icon: {fileID: 0}
@@ -62,8 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ef6ff773653d140b74e0dafe4d787c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: cow
-  meat: beef
+  Name: Cow
+  meat: Beef
+  meatPref: {fileID: 2413286598650471772, guid: 98e5a880897db224dafa84d077c723a9, type: 3}
   jumpForce: 100
   fleeDistance: 10
 --- !u!1001 &1550646351085885251
@@ -76,6 +77,10 @@ PrefabInstance:
     - target: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
       propertyPath: m_Name
       value: CowBlW
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4054502789990554, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
       propertyPath: m_RootOrder
@@ -128,11 +133,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
   m_PrefabInstance: {fileID: 1550646351085885251}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1552447920172900313 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4054502789990554, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
-  m_PrefabInstance: {fileID: 1550646351085885251}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &2726166904519660239
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -147,3 +147,8 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 33bee4529afa2d740bfcc71a4c9f1f2c, type: 3}
+--- !u!4 &1552447920172900313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4054502789990554, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+  m_PrefabInstance: {fileID: 1550646351085885251}
+  m_PrefabAsset: {fileID: 0}
